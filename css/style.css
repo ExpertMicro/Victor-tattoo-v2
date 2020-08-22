@@ -1,0 +1,101 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* HEADER NAVEGAÇÃO*/
+
+.container {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.tema-page {
+  background: url(../img/tema-principal-3-editada.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: 0;
+}
+
+.container .header {
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.container .header .menu-nav ul li {
+  padding: 13px 0;
+}
+
+.container .header .menu-nav ul li a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.container .header .menu-nav li + li {
+  margin-left: 30px;
+}
+
+.container .header .menu-nav .menu-nav-logo {
+  padding: 0 30px;
+}
+
+/* main */
+.main h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 92px;
+  text-align: center;
+  color: #fff;
+  padding: 200px 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Galeria */
+.gallery {
+  background: #1B1B1B;
+}
+
+.gallery h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gallery .tz-gallery {
+  padding: 0 20px;
+}
+
+.gallery .tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.gallery .tz-gallery {
+  padding: 40px;
+}
+
+.gallery .tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+}
+
+.gallery .tz-gallery img {
+  border-radius: 4px;
+}
+
+.gallery .baguetteBox-button {
+  background-color: transparent !important;
+}
+
