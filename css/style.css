@@ -70,11 +70,7 @@ body {
   font-size: 36px;
   color: #fff;
   text-align: center;
-  padding: 40px 0;
-}
-
-.gallery .tz-gallery {
-  padding: 0 20px;
+  padding: 60px 0 40px 0;
 }
 
 .gallery .tz-gallery .lightbox img {
@@ -84,7 +80,7 @@ body {
 }
 
 .gallery .tz-gallery {
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .gallery .tz-gallery .lightbox img:hover {
@@ -98,4 +94,66 @@ body {
 .gallery .baguetteBox-button {
   background-color: transparent !important;
 }
+
+/* SOBRE */
+.sobre {
+  font-family: 'Anton', sans-serif;
+}
+
+.sobre .container .bio .title {
+  font-size: 36px;
+  color: #070603;
+  text-align: center;
+  padding: 60px 0 40px 0;
+}
+
+.sobre .container .avatar {
+  text-align: center;
+}
+
+.sobre .container .bio {
+  margin: 0 auto;
+}
+
+.sobre .container .bio .my-name {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  color: #070603;
+}
+
+.sobre .container .bio .my-name h3::before {
+  content: url(..//img/agulha-esquerda.svg);
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.sobre .container .bio .my-name h3::after {
+  content: url(../img/agulha-direita.svg);
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.sobre .container .bio .about-me .my-story {
+  max-width: 420px;
+}
+
+
+.sobre .container .bio .about-me .my-story {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #070603;
+}
+
+.sobre .container .bio .about-me .my-story p::before {
+  content: '';
+  float: left;
+  display: block;
+  width: 10px;
+  height: 362px;
+  background: #070603;
+  margin-right: 20px;
+}
+
 
