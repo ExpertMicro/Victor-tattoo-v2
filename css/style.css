@@ -136,6 +136,7 @@ body {
 
 .sobre .container .bio .about-me .my-story {
   max-width: 420px;
+  margin-bottom: 60px;
 }
 
 
@@ -155,5 +156,156 @@ body {
   background: #070603;
   margin-right: 20px;
 }
+
+/* CONTATO */
+.container-fluid {
+  background: #1b1b1b;
+}
+
+.container-fluid .titulo-contato {
+  font-size: 36px;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.container-location .location h3 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container-location .location p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+.container-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-separador {
+  width: 10px;
+  height: 405px;
+  background: #fff;
+}
+
+.location-map img {
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 15px;
+}
+
+
+/* FOOTER */
+.footer-bg {
+  background: #fff;
+}
+.footer p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #070603;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .content-separador {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .gallery h2 {
+    padding-top: 50px;
+  }
+  .title h2 {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+  .my-story p {
+    height: 500px; 
+  }
+  .my-story p::before {
+    content: '';
+    float: left;
+    display: block;
+    width: 10px;
+    height: 362px;
+    background: #070603;
+    margin-right: 10px;
+  }
+  .avatar {
+    margin-bottom: 15px;
+  }
+  .container-location {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .location-map img {
+    margin-top: 20px;
+  }
+  .location p {
+    line-height: 1.em;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .footer p {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .titulo-contato h2 {
+    margin-bottom: 60px;
+  }
+
+  .titulo-contato h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+
+@media screen and (max-width: 800px) {
+  .tema-page .main h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tema-page .main h1 {
+    font-size: 64px;
+    padding: 100px 0;
+  }
+  .tema-page .container .header {
+    display: none;
+  }
+  .sobre .container .bio .about-me .my-story p::before {
+    height: 470px;
+  }
+}
+
 
 
