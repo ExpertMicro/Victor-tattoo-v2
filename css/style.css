@@ -7,13 +7,6 @@ body {
 }
 
 /* HEADER NAVEGAÇÃO*/
-
-.container {
-  max-width: 960px;
-  display: flex;
-  margin: 0 auto;
-}
-
 .tema-page {
   background: url(../img/tema-principal-3-editada.jpg) no-repeat center center;
   background-size: cover;
@@ -22,8 +15,15 @@ body {
   z-index: 0;
 }
 
-.container .header {
-  padding: 40px 0;
+.tema-page .container-header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.container-header .header {
+  padding: 40px 0 0 0;
   margin: 0 auto;
 }
 
@@ -31,21 +31,77 @@ body {
   display: flex;
 }
 
-.container .header .menu-nav ul li {
+.container-header .header .menu-nav ul li {
   padding: 13px 0;
 }
 
-.container .header .menu-nav ul li a {
+.container-header .header .menu-nav ul li a {
   font-size: 18px;
   color: #fff;
 }
 
-.container .header .menu-nav li + li {
+.container-header .header .menu-nav li + li {
   margin-left: 30px;
 }
 
-.container .header .menu-nav .menu-nav-logo {
+.container-header .header .menu-nav .menu-nav-logo {
   padding: 0 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .tema-page .mobile-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .tema-page .container-header {
+    display: none;
+  }
+}
+
+/* Mobile styles */
+.mobile-container {
+  margin: auto;
+  background-color: #555;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.active {
+  background-color: #1b1b1b;
+  color: white;
 }
 
 /* main */
@@ -145,6 +201,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: #070603;
+  margin: 0 auto;
 }
 
 .sobre .container .bio .about-me .my-story p::before {
@@ -157,6 +214,10 @@ body {
   margin-right: 20px;
 }
 
+.sobre .container .bio .about-me .my-story {
+  margin-bottom: 120px;
+}
+
 /* CONTATO */
 .container-fluid {
   background: #1b1b1b;
@@ -167,7 +228,7 @@ body {
   font-family: 'Anton', sans-serif;
   color: #fff;
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 0 40px 0;
 }
 
 .container-location .location h3 {
@@ -229,6 +290,8 @@ body {
   padding: 30px;
 }
 
+
+
 @media screen and (max-width: 1000px) {
   .content-separador {
     display: none;
@@ -236,16 +299,6 @@ body {
 }
 
 @media screen and (max-width: 870px) {
-  .gallery h2 {
-    padding-top: 50px;
-  }
-  .title h2 {
-    margin-top: 50px;
-    margin-bottom: 35px;
-  }
-  .my-story p {
-    height: 500px; 
-  }
   .my-story p::before {
     content: '';
     float: left;
@@ -276,16 +329,9 @@ body {
     font-size: 12px;
     padding: 14px;
   }
-  .titulo-contato h2 {
-    margin-bottom: 60px;
-  }
-
-  .titulo-contato h2 {
-    padding-top: 50px;
-    margin-bottom: 30px;
-  }
-  
 }
+
+
 
 
 @media screen and (max-width: 800px) {
@@ -294,18 +340,44 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 300px) {
   .tema-page .main h1 {
-    font-size: 64px;
-    padding: 100px 0;
+    font-size: 46px;
   }
-  .tema-page .container .header {
-    display: none;
+  .gallery h2 {
+    font-size: 24px;
+    padding: 30px 0 20px 0;
   }
-  .sobre .container .bio .about-me .my-story p::before {
-    height: 470px;
+  .gallery .tz-gallery {
+    padding: 0 20px;
+  }
+  .sobre .container .bio .title {
+    font-size: 24px;
+    padding: 30px 0 20px 0;
+  }
+  .sobre .container .bio .my-name {
+    font-size: 18px;
+  }
+  .sobre .container .bio .about-me .my-story {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+  .container-fluid .titulo-contato {
+    font-size: 24px;
+    padding: 30px 0 20px 0;
+  }
+  .container-fluid .container-location .location h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .container-fluid .container-location .location p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 10px;
   }
 }
-
 
 
