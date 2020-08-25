@@ -42,6 +42,15 @@ body {
   letter-spacing: 1px;
 }
 
+.tema-page .container-header .header .menu-nav .shop {
+  padding: 7px 0px 0px 40px;
+}
+
+.tema-page .container-header .header .menu-nav .shop img {
+  width: 25px;
+  height: 25px;
+}
+
 .container-header .header .menu-nav ul li a::after {
   content: '';
   display: block;
