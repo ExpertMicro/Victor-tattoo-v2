@@ -8,18 +8,19 @@ body {
 
 /* HEADER NAVEGAÇÃO*/
 .tema-page {
-  background: url(../img/tema-principal-3-editada.jpg) no-repeat center center;
+  background: url(../img/bg-tema-principal.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   height: 100vh;
   z-index: 0;
 }
+
 
 .tema-page .container-header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background: rgb(0, 0, 0, 0.2);
 }
 
 .container-header .header {
@@ -40,15 +41,6 @@ body {
   font-size: 18px;
   color: #fff;
   letter-spacing: 1px;
-}
-
-.tema-page .container-header .header .menu-nav .shop {
-  padding: 7px 0px 0px 40px;
-}
-
-.tema-page .container-header .header .menu-nav .shop img {
-  width: 25px;
-  height: 25px;
 }
 
 .container-header .header .menu-nav ul li a::after {
@@ -95,7 +87,7 @@ body {
 /* Mobile styles */
 .mobile-container {
   margin: auto;
-  background-color: #555;
+  background-color: #1b1b1b;
   color: white;
   border-radius: 10px;
 }
@@ -112,23 +104,22 @@ body {
 
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  text-align: center;
   display: block;
 }
 
 .topnav a.icon {
-  background: black;
+  background: #1b1b1b;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.topnav a:hover {
-  background-color: #333;
-  color: #fff;
 }
 
 .active {
@@ -144,7 +135,7 @@ body {
   color: #fff;
   padding: 200px 0;
   letter-spacing: 1px;
-  line-height: 1.1;
+  line-height: 1.3em;
   text-shadow: 2px 2px 10px #000;
 }
 
@@ -330,7 +321,7 @@ body {
   }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 980px) {
   .my-story p::before {
     content: '';
     float: left;
@@ -369,6 +360,14 @@ body {
 @media screen and (max-width: 800px) {
   .tema-page .main h1 {
     font-size: 64px;
+  }
+
+  .container-header .header .menu-nav .menu-nav-logo {
+    padding: 0 15px;
+  }
+
+  .container-header .header .menu-nav li + li {
+    margin-left: 20px;
   }
 }
 
